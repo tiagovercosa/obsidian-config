@@ -1,0 +1,39 @@
+/* Espaço antes do nome */
+.nav-file-title-content::before { margin-right: 5px; }
+
+/* Ícones SVG do Iconify (cor pode ser passada por query) */
+.nav-file-title[data-path$=".pdf"] .nav-file-title-content::before {
+  content: url("https://api.iconify.design/bi/file-pdf.svg?color=%23D14D41");
+}
+.nav-file-title[data-path$=".md"] .nav-file-title-content::before {
+  content: url("https://api.iconify.design/bi/file-text.svg?color=gray");
+}
+.theme-dark .nav-file-title.is-active[data-path$=".md"] .nav-file-title-content::before {
+  content: url("https://api.iconify.design/bi/file-text.svg?color=%23F2F0E5");
+}
+.theme-light .nav-file-title.is-active[data-path$=".md"] .nav-file-title-content::before {
+  content: url("https://api.iconify.design/bi/file-text.svg?color=%23333333");
+}
+.nav-file-title[data-path$=".png"] .nav-file-title-content::before {
+  content: url("https://api.iconify.design/clarity/image-line.svg?color=%23879A39");
+}
+.nav-file-title[data-path$=".jpg"] .nav-file-title-content::before {
+  content: url("https://api.iconify.design/clarity/image-line.svg?color=%23879A39");
+}
+.nav-file-title[data-path$=".m4a"] .nav-file-title-content::before {
+  content: url("https://api.iconify.design/bi/file-music.svg?color=%23DA702C");
+}
+
+.nav-folder .nav-folder-title-content::before {
+	content: url("https://api.iconify.design/lucide/folder.svg?color=gray");
+}
+
+.nav-folder-title-content::before {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+
