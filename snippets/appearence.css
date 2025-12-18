@@ -1,0 +1,25 @@
+/* Para funcionar, se estiver usando o plugin Outliner,
+faz-se necessário ir nas configurações do plugin e
+desabilitar a opção "Improve the style of your lists" */
+
+:root {
+    --theme-color: #24847C;
+}
+
+body.theme-dark {
+    --list-marker-color:var(--theme-color);
+    --list-marker-color-hover:var(--theme-color);
+    /* --list-marker-color-collapsed: yellow; */
+}
+
+body.theme-light {
+    --list-marker-color: var(--theme-color);
+    --list-marker-color-hover: var(--theme-color);
+    /* --list-marker-color-collapsed: red; */
+}
+
+.markdown-source-view .cm-highlight {
+    background-color: #24847C55 !important;
+    border-radius: 3px;
+    padding: 1px 4px;
+}
