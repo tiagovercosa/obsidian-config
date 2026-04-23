@@ -2,19 +2,18 @@
 
 .theme-dark img {
     display: block;
-    max-width: 80%;
-    padding: 0 auto 0 auto;
+    max-width: 100%;
+    padding: 0;
     outline: none;
     margin-left: auto;
     margin-right: auto;
     mix-blend-mode: screen;
-    filter: opacity(1);
 }
 
 .theme-light img {
     display: block;
-    max-width: 80%;
-    padding: 0 auto 0 auto;
+    max-width: 100%;
+    padding: 0;
     outline: none;
     margin-left: auto;
     margin-right: auto;
@@ -26,19 +25,17 @@
 
 .theme-dark .popover.hover-popover .markdown-preview-view img {
     mix-blend-mode: screen;
-    /*filter: opacity(1);*/
 }
 
 .theme-light .popover.hover-popover .markdown-preview-view img {
     mix-blend-mode: multiply;
-    /*filter: opacity(0.95);*/
 }
 
 /* Image dynamic colors inversion */
 /* Aggiungi class per applicare l'effetto solo alle immagini SVG */
 
 .theme-dark span[src$="#invert_B"] img {
-  filter: invert(1) brightness(100%) saturate(3)
+  filter: invert(1) brightness(100%) saturate(3);
 }
 
 .theme-light span[src$="#invert_W"] img {
